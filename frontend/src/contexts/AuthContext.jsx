@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext();
-const BACKEND_URL = 'http://127.0.0.1:3000/'
+const BACKEND_URL = 'http://https://foodloop-nxd0.onrender.com/'
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {

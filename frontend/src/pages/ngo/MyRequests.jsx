@@ -15,7 +15,7 @@ const NGOMyRequests = () => {
   
   const fetchMyRequests = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:3000/ngo/my_requests', {
+      const response = await fetch('http://https://foodloop-nxd0.onrender.com/ngo/my_requests', {
         headers: getAuthHeaders(),
       });
       

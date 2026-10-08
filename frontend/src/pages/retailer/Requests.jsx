@@ -16,7 +16,7 @@ const RetailerRequests = () => {
   
   const fetchRequests = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:3000/retailers/requested_food', {
+      const response = await fetch('http://https://foodloop-nxd0.onrender.com/retailers/requested_food', {
         headers: getAuthHeaders(),
       });
       
@@ -45,7 +45,7 @@ const RetailerRequests = () => {
   
   const handleApproveRequest = async (requestId) => {
     try {
-      const response = await fetch(`http://127.0.0.1:3000/retailers/requests/${requestId}/approve`, {
+      const response = await fetch(`http://https://foodloop-nxd0.onrender.com/retailers/requests/${requestId}/approve`, {
         method: 'POST',
         headers: getAuthHeaders(),
       });
@@ -66,7 +66,7 @@ const RetailerRequests = () => {
   
   const handleIgnoreRequest = async (requestId) => {
     try {
-      const response = await fetch(`http://127.0.0.1:3000/retailers/requests/${requestId}/ignore`, {
+      const response = await fetch(`http://https://foodloop-nxd0.onrender.com/retailers/requests/${requestId}/ignore`, {
         method: 'POST',
         headers: getAuthHeaders(),
       });

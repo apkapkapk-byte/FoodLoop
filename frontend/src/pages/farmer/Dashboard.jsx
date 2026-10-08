@@ -25,7 +25,7 @@ const FarmerDashboard = () => {
       try {
         console.log('Fetching demand forecast data...');
         setLoading(true);
-        const response = await fetch('http://127.0.0.1:3000/farmer/simple_demand_forecast', {
+        const response = await fetch('http://https://foodloop-nxd0.onrender.com/farmer/simple_demand_forecast', {
           headers: getAuthHeaders(),
         });
         
