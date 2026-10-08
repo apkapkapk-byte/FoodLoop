@@ -1,3 +1,4 @@
+import os
 from foodloop_app import create_app, db
 from foodloop_app.models import Role  # Make sure all models are imported somewhere so SQLAlchemy registers them
 
@@ -17,4 +18,4 @@ def init_roles():
 
 if __name__ == "__main__":
     init_roles()
-    app.run(debug=True, port=3000)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 3000)), debug=False)	
