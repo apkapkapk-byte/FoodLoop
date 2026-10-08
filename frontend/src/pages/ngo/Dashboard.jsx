@@ -27,7 +27,7 @@ const NGODashboard = () => {
   
   const fetchAvailableFood = async () => {
     try {
-      const response = await fetch('http://https://foodloop-nxd0.onrender.com/ngo/filtered_food', {
+      const response = await fetch('https://foodloop-nxd0.onrender.com/ngo/filtered_food', {
         headers: getAuthHeaders(),
       });
       
@@ -85,7 +85,7 @@ const NGODashboard = () => {
     }
     
     try {
-      const response = await fetch('http://https://foodloop-nxd0.onrender.com/ngo/request', {
+      const response = await fetch('https://foodloop-nxd0.onrender.com/ngo/request', {
         method: 'POST',
         headers: getAuthHeaders(),
         body: JSON.stringify({

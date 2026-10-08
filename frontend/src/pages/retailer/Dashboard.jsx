@@ -25,7 +25,7 @@ const RetailerDashboard = () => {
   
   const fetchInventory = async () => {
     try {
-      const response = await fetch('http://https://foodloop-nxd0.onrender.com/retailers/inventory', {
+      const response = await fetch('https://foodloop-nxd0.onrender.com/retailers/inventory', {
         headers: getAuthHeaders(),
       });
       
@@ -45,7 +45,7 @@ const RetailerDashboard = () => {
   
   const fetchNotifications = async () => {
     try {
-      const response = await fetch('http://https://foodloop-nxd0.onrender.com/retailers/notifications', {
+      const response = await fetch('https://foodloop-nxd0.onrender.com/retailers/notifications', {
         headers: getAuthHeaders(),
       });F
       
@@ -77,7 +77,7 @@ const RetailerDashboard = () => {
     }
     
     try {
-      const response = await fetch('http://https://foodloop-nxd0.onrender.com/retailers/add_item', {
+      const response = await fetch('https://foodloop-nxd0.onrender.com/retailers/add_item', {
         method: 'POST',
         headers: getAuthHeaders(),
         body: JSON.stringify({
@@ -109,7 +109,7 @@ const RetailerDashboard = () => {
     }
     
     try {
-      const response = await fetch(`http://https://foodloop-nxd0.onrender.com/retailers/inventory/${selectedItem.id}/sell`, {
+      const response = await fetch(`https://foodloop-nxd0.onrender.com/retailers/inventory/${selectedItem.id}/sell`, {
         method: 'POST',
         headers: getAuthHeaders(),
         body: JSON.stringify({
@@ -135,7 +135,7 @@ const RetailerDashboard = () => {
   
   const handleListItem = async (item) => {
     try {
-      const response = await fetch(`http://https://foodloop-nxd0.onrender.com/retailers/inventory/${item.id}/list`, {
+      const response = await fetch(`https://foodloop-nxd0.onrender.com/retailers/inventory/${item.id}/list`, {
         method: 'POST',
         headers: getAuthHeaders(),
       });
@@ -160,7 +160,7 @@ const RetailerDashboard = () => {
     }
     
     try {
-      const response = await fetch(`http://https://foodloop-nxd0.onrender.com/retailers/item/remove/${itemId}`, {
+      const response = await fetch(`https://foodloop-nxd0.onrender.com/retailers/item/remove/${itemId}`, {
         method: 'DELETE',
         headers: getAuthHeaders(),
       });
@@ -181,7 +181,7 @@ const RetailerDashboard = () => {
   
   const handleIgnoreNotification = async (itemId) => {
     try {
-      const response = await fetch(`http://https://foodloop-nxd0.onrender.com/retailers/food/${itemId}/ignore`, {
+      const response = await fetch(`https://foodloop-nxd0.onrender.com/retailers/food/${itemId}/ignore`, {
         method: 'POST',
         headers: getAuthHeaders(),
       });

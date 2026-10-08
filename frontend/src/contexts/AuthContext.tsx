@@ -21,7 +21,7 @@ interface AuthContextType {
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
-const BACKEND_URL = 'http://https://foodloop-nxd0.onrender.com/'
+const BACKEND_URL = 'https://foodloop-nxd0.onrender.com/'
 export const useAuth = (): AuthContextType => {
   const context = useContext(AuthContext);
   if (context === undefined) {
